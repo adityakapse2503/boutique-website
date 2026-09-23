@@ -80,7 +80,12 @@ export default function Navbar() {
 
           <nav className="hidden lg:flex items-center gap-9">
             {links.map((l) => (
-              <NavLink key={l.to} to={l.to} className={linkClass} end={l.to === "/"}>
+              <NavLink
+                key={l.to}
+                to={l.to}
+                className={linkClass}
+                end={l.to === "/" || l.to === "/collections"}
+              >
                 {l.label}
               </NavLink>
             ))}
