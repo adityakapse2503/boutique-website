@@ -69,7 +69,7 @@ export default function Navbar() {
             : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 flex items-center justify-between">
           <button
             className="lg:hidden"
             onClick={() => setOpen(true)}
@@ -90,11 +90,11 @@ export default function Navbar() {
             <img
               src={logoDark}
               alt="Noor Édition"
-              className="h-7 md:h-9 w-auto object-contain"
+              className="h-6 sm:h-7 md:h-9 w-auto object-contain"
             />
           </NavLink>
 
-          <div className="flex items-center gap-5 text-charcoal">
+          <div className="flex items-center gap-3 sm:gap-5 text-charcoal">
             <button aria-label="Search" onClick={() => setSearchOpen(true)}>
               <Search size={19} />
             </button>
@@ -131,7 +131,7 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
         />
         <div
-          className={`absolute top-0 left-0 h-full w-[80%] max-w-sm bg-ivory px-8 py-8 flex flex-col transition-transform duration-500 ease-silk ${
+          className={`absolute top-0 left-0 h-full w-[86%] max-w-sm bg-ivory px-6 sm:px-8 py-6 sm:py-8 flex flex-col transition-transform duration-500 ease-silk ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -228,7 +228,7 @@ export default function Navbar() {
                 ))}
               </ul>
             )}
-            <div className="pb-16" />
+            <div className="pb-10 sm:pb-16" />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Button({
   ...rest
 }) {
   const base =
-    "group inline-flex items-center gap-3 px-8 py-3.5 text-[0.72rem] tracking-widest2 uppercase font-medium transition-all duration-500 ease-silk";
+    "group inline-flex items-center gap-3 px-5 sm:px-8 py-3.5 text-[0.68rem] sm:text-[0.72rem] tracking-widest2 uppercase font-medium transition-all duration-500 ease-silk";
 
   const variants = {
     dark: "bg-charcoal text-ivory hover:bg-umber",

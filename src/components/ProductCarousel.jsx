@@ -18,7 +18,7 @@ export default function ProductCarousel({ products }) {
         className="flex gap-5 md:gap-8 overflow-x-auto no-scrollbar scroll-smooth pb-2"
       >
         {products.map((p) => (
-          <div key={p.id} className="min-w-[62%] sm:min-w-[38%] lg:min-w-[24%]">
+          <div key={p.id} className="min-w-[78%] sm:min-w-[38%] lg:min-w-[24%]">
             <ProductCard product={p} />
           </div>
         ))}

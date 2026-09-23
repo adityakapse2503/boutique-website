@@ -14,7 +14,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[92vh] min-h-[560px] w-full overflow-hidden bg-charcoal">
+    <section className="relative h-[88vh] min-h-[520px] md:h-[92vh] md:min-h-[560px] w-full overflow-hidden bg-charcoal">
       <div
         className="absolute inset-0 scale-[1.15]"
         style={{ transform: `translateY(${offset}px) scale(1.15)` }}
@@ -27,7 +27,7 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-charcoal/40" />
 
-      <div className="relative h-full max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col justify-end pb-20 md:pb-28">
+      <div className="relative h-full max-w-[1440px] mx-auto px-6 md:px-10 flex flex-col justify-end pb-14 sm:pb-20 md:pb-28">
         <p
           className={`text-ivory/80 text-[0.72rem] tracking-widest2 uppercase mb-5 transition-all duration-1000 ease-silk ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -36,7 +36,7 @@ export default function Hero() {
           Autumn / Winter Édition
         </p>
         <h1
-          className={`font-display text-ivory text-[3rem] leading-[1.05] sm:text-[4.2rem] md:text-[5.5rem] max-w-3xl transition-all duration-1000 delay-150 ease-silk ${
+          className={`font-display text-ivory text-[2.7rem] leading-[1.05] sm:text-[4.2rem] md:text-[5.5rem] max-w-3xl transition-all duration-1000 delay-150 ease-silk ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

@@ -35,10 +35,11 @@ const columns = [
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-ivory">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 pt-20 pb-10">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-16">
-          <div className="col-span-2">
-  <img src={logo} alt="Boutique Logo" className="h-16 w-auto object-contain" />            <p className="mt-5 text-sm text-ivory/60 max-w-xs leading-relaxed">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-10 pt-16 md:pt-20 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12 md:pb-16">
+          <div className="sm:col-span-2">
+            <img src={logo} alt="Boutique Logo" className="h-14 md:h-16 w-auto object-contain" />
+            <p className="mt-5 text-sm text-ivory/60 max-w-xs leading-relaxed">
               A boutique house for reimagined Indian silhouettes — designed
               in small runs, finished by hand.
             </p>
